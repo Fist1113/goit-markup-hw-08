@@ -1,0 +1,82 @@
+/* Преимущества */
+.features {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__icon {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f5f4fa;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    fill: var(--base-text-color); 
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    
+
+    @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+    @media screen and (min-width: 768px) {
+    text-align: left;
+    margin-top: 30px;
+  }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  &__item {
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .features__icon {
+      max-width: 450px;
+      margin-bottom: 30px;
+  }
+}
+
+// tablet
+@media screen and (min-width: 768px) {
+  .features__icon {  
+    width: 354px;
+  }
+
+  .features__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+
+  .features__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+// desktop
+@media screen and (min-width: 1200px) {
+  .features__icon {  
+    width: 270px;
+  }
+
+  .features__item {
+    width: calc((100% - 90px) / 4);
+  }
+
+  .features__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}

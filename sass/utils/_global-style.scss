@@ -1,0 +1,80 @@
+
+body {
+  font-family: roboto, sans-serif;
+  background-color: var(--primary-white-color);
+  color: var(--base-text-color);
+  letter-spacing: 0.03em;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0px;
+}
+
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.container {
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+
+  @media (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    background-size: contain;
+  }
+}
+
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* цвет заголовков */
+.features__title,
+.specialization__title,
+.team__title,
+.team-member__name,
+.project-card__title,
+.clients__title {
+  color: var(--title-text-color);
+}
+
